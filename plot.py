@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+# FROM CHATGPT
 def plot_results(df, title):
     summary = df.groupby(['time', 'type']).agg(
         frac_bet=('betted', 'mean'),
